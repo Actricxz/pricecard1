@@ -1,0 +1,19 @@
+<!--<div class ="container">
+  <div class="card-deck mb-3 text-center">
+    <div *ngFor="let card of priceCardList" class="card mb-4 box-shadow">
+      <app-price-card  [price]="card.price" [id]="card.id" [features]="card.features" [name]="card.name"></app-price-card>
+    </div>
+  </div>
+</div>
+-->
+<section class="pricing py-5">
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let card of priceCardList" class="col-lg-4">
+        <app-price-card [price]="card.price" [id]="card.id" [name]="card.name" [features]="card.features" [features_muted]="card.features_muted"></app-price-card>
+      </div>
+    </div>
+  </div>
+</section>
+
+
